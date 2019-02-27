@@ -2,3 +2,8 @@
 <a href="/posts/new">게시글 작성</a>
 
 <hr>
+{% for post in posts %}
+    <p>{{ post.id }}</p>
+    <p>{{ post.title }}</p>
+    <hr>
+{% endfor %}
